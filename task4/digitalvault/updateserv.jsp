@@ -19,7 +19,6 @@
 	} catch (Exception e) {
 		response.sendRedirect("error/dontplaywithurl.jsp");
 	}
-	Connection connection = (Connection) session.getAttribute("connection");
 	String sql = "select * from service join account on service.serviceid = account.serviceid where account.id=" + id;
 	Statement statment = connection.createStatement();
 	ResultSet rs = statment.executeQuery(sql);

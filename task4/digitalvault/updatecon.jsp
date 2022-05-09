@@ -18,7 +18,6 @@
 	} catch (Exception e) {
 		redirect = true;
 	}
-	Connection connection = (Connection) session.getAttribute("connection");
 	String sql = "select * from contact where id=" + id;
 	Statement statment = connection.createStatement();
 	ResultSet rs = statment.executeQuery(sql);

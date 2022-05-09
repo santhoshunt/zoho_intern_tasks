@@ -23,7 +23,7 @@
 	} else {
 		filterContact.append("lower(service.serviceurl) LIKE '%" + key + "%'");
 	}
-	PreparedStatement pstm = connn.prepareStatement(filterContact.toString());
+	PreparedStatement pstm = connection.prepareStatement(filterContact.toString());
 	ResultSet rs = pstm.executeQuery();
 	%>
 	<TABLE class="table table-responsive table-striped table-bordered">

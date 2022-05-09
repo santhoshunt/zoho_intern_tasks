@@ -12,7 +12,6 @@
 <body>
 	<%@ include file="navbar.jsp"%>
 	<%
-	Connection connection = (Connection) session.getAttribute("connection");
 	String sql = "select * from contact order by id";
 	Statement statment = connection.createStatement();
 	ResultSet rs = statment.executeQuery(sql);

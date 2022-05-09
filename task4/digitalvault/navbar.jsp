@@ -19,24 +19,3 @@
 
 	</div>
 </nav>
-		<%
-		Connection connn = null;
-		try {
-			connn = (Connection) session.getAttribute("connection");
-		} catch (Exception e) {
-			try {
-				request.setAttribute("errorMessage", "Connection not establised");
-				request.getRequestDispatcher("/index.jsp").forward(request, response);
-			} catch (Exception e1) {
-				out.println(e.getStackTrace() + " " + e1.getStackTrace());
-			}
-		}
-		if (connn == null || connn.isClosed()) {
-			try {
-				request.setAttribute("errorMessage", "Connection not establised");
-				request.getRequestDispatcher("/index.jsp").forward(request, response);
-			} catch (Exception e1) {
-				out.println(e1.getStackTrace());
-			}
-		}
-		%>

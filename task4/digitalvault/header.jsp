@@ -3,6 +3,6 @@
 <title>Digital vault</title>
 <%@ page import="servletclass.ConnectionManager, java.sql.*"%>
 <% 
-
 	ConnectionManager conMan = new ConnectionManager();
 	Connection connection = conMan.getConnection();
+%>

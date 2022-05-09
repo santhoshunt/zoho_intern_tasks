@@ -7,12 +7,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<%@ include file="header.jsp"%>
+<%@ include file="/header.jsp"%>
 </head>
 <body>
 	<%
-	ConnectionManager conMan = new ConnectionManager();
-	Connection connection = conMan.createConnection();
 	if (connection != null) {
 		session.setAttribute("connection", connection);
 		session.setAttribute("connected", true);

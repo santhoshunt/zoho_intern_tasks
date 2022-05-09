@@ -15,7 +15,7 @@
 		String key = request.getParameter("key").toString().toLowerCase();
 		String field = request.getParameter("filterby").toString();
 		String filterContact = "SELECT * FROM contact WHERE lower(" + field + ") LIKE '%"+ key + "%'";
-		PreparedStatement pstm = connn.prepareStatement(filterContact);
+		PreparedStatement pstm = connection.prepareStatement(filterContact);
 		ResultSet rs = pstm.executeQuery();
 	%>
 	<TABLE class="table table-responsive table-striped table-bordered mt-5 p-3">

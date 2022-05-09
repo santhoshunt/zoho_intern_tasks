@@ -12,8 +12,7 @@
 <body>
 	<%@ include file="navbar.jsp"%>
 	<%
-	Connection connection = (Connection) session.getAttribute("connection");
-	String sql = "SELECT * FROM account JOIN service ON account.serviceid = service.serviceid order by account.id";
+		String sql = "SELECT * FROM account JOIN service ON account.serviceid = service.serviceid order by account.id";
 	Statement statment = connection.createStatement();
 	ResultSet rs = statment.executeQuery(sql);
 	%>
