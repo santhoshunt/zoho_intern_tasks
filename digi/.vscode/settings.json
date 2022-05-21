@@ -1,0 +1,15 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/sandy/apache-tomcat-8.5.78/lib/javax.websocket-api-1.1.jar",
+        "/home/sandy/apache-tomcat-8.5.78/lib/servlet-api.jar",
+        "/home/sandy/apache-tomcat-8.5.78/lib/websocket-api.jar",
+        "WEB-INF/lib/tomcat-juli-10.1.0-M14.jar",
+        "WEB-INF/lib/tomcat-servlet-api-10.1.0-M14.jar",
+        "WEB-INF/lib/tomcat-util-10.1.0-M14.jar",
+        "WEB-INF/lib/tomcat-websocket-10.1.0-M14.jar",
+        "WEB-INF/lib/tomcat-websocket-api-10.1.0-M14.jar",
+        "WEB-INF/lib/tomcat-websocket-client-api-10.1.0-M14.jar"
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m"
+}
