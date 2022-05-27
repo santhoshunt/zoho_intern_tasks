@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" IssueInstant="2022-05-25T12:24:08.257Z" Version="2.0">
+    <saml2:Issuer>http:localhost:8085/digi/</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+            <ds:Reference URI="">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                <ds:DigestValue>qzZ2XMTkG5aW4JIH392Y079vZ8U=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>OJgpkzgWC/WutGpSCGv62VKe4APUzBhN93VTUilPQEL700KetbctNxAgSwbKLV3Ql14Eu78ey636a9Lsl9ueO4Vaokmoa2SE7txODCGa2nnbmNcufuleCTUzw8YnvMj4JenuzXAytn28LJXpMxluRjiH7sX6EmNj37KW45ajgHKasTJRWFf+4ZXNyDep1WRKshGFNysfh8MyOr6YtkgCntuR8Kf3ddFFj5jepbulcCyCpT4srFc2SG0vrFybTVTCbsrEenzWdEQQXKy4LP/bF+NbpTrEZAHUlGHCgSo1d/9xRe16Hn8K3mq8TvVA3a90Vvchfjj7fjPAF4w3IvIaRw==</ds:SignatureValue>
+        <ds:KeyInfo>
+            <ds:X509Data>
+                <ds:X509Certificate>MIIDqDCCApCgAwIBAgIGAYDvuSXfMA0GCSqGSIb3DQEBCwUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi05MzQwNjA4NTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTAeFw0yMjA1MjMwNzAxMTBaFw0zMjA1MjMwNzAyMTBaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFTATBgNVBAMMDGRldi05MzQwNjA4NTEcMBoGCSqGSIb3DQEJARYNaW5mb0Bva3RhLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMsk6vTPEA/Fgs4F/6sB7Lx5ySfQZX69kyVwY0JTquCCNoVS1WWh+1tisSy77QJQqW4SpCkhkLWmUpoaVdJSaaFvBfkS2tt1mQzWi8rKTqhFT0WIP7jxQQgDR88S7j4rk7n1uJ8W2v6EZyQBVwjjlbApJyNNAJDWq52bMiRhij3Sj+HdvOSA5q4MvZuSKHb9JBUPsMQGYmWSC71oFplio8zS58vlOFQ03WVGeXo3gVO/oL3cp1TcYhZaN62jz34afTZnBcBVNr2Jy/vW+V8pQ0vUJgXYxmTLDoiyyOoQJVUAWSzZmBAOcYQWjPFrBCEmPtHQUN4iuhZOo+fa6aU3o/kCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAbInk/yf+v8PnlBzEqIApKYWUvKO8PrhrG6OnwWovu32GQh2fqjL7gDJTr+Sckqxpn4T3JcXkGsXASY38MNTAKnwxLxqNim9JRSV83gKeE3b/QemJjFuECRhZM/ecBUVCN0RGyiD2oqrouSClBkmvVpRcEO3z2shhUcYIlWO07f6LhVd7Ui/hG5RSjOiJgq7Awqj4ak6KLzgbhvoYhMpCetQ/onhOtmP1Foi+8dV4VAg0whz5Zb0cl7AuBnBkX28VDweJEnO9uxe3AULKos+w2mOBVbmktmZbGIiUiwZtSWkvrxoyqoKkUsvCVXDMwtcKKtscOJjKXyR3be0BDoLHbQ==</ds:X509Certificate>
+            </ds:X509Data>
+        </ds:KeyInfo>
+    </ds:Signature>
+    <saml2:Conditions>
+        <saml2:OneTimeUse />
+    </saml2:Conditions>
+    <saml2:AuthnStatement AuthnInstant="2022-05-25T12:24:08.257Z" SessionIndex="abcdedf1234567" SessionNotOnOrAfter="2022-05-25T12:24:08.272Z">
+        <saml2:AuthnContext>
+            <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Password</saml2:AuthnContextClassRef>
+        </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+        <saml2:Attribute Name="digitalvault.mobilePhone">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">9500852560</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="digitalvault.userName">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">santhosh.kumar</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="digitalvault.lastName">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Kumar</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="digitalvault.locality">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">India</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="digitalvault.email">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">sec19cs130@sairamtap.edu.in</saml2:AttributeValue>
+        </saml2:Attribute>
+        <saml2:Attribute Name="digitalvault.firstName">
+            <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Santhosh</saml2:AttributeValue>
+        </saml2:Attribute>
+    </saml2:AttributeStatement>
+</saml2:Assertion>
