@@ -36,10 +36,11 @@ public class updateContact extends HttpServlet {
 			if (pstm.executeUpdate() == 1) {
 				res.sendRedirect("viewdata.jsp");
 			} else {
-//				out.println("not success");
+				// out.println("not success");
 				res.sendRedirect("error.jsp");
 			}
 			pstm.close();
+			out.close();
 		} catch (Exception e) {
 			try {
 

@@ -1,3 +1,0 @@
-<Context>
-    <Realm className="org.apache.catalina.realm.JAASRealm" appName="digi" userClassNames="servletclass.JASSUserPrincipal,servletclass.JAASPasswordPrincipal" roleClassNames="servletclass.JASSRolePrincipal"/>
-</Context>

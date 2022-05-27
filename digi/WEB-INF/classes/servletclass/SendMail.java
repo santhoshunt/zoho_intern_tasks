@@ -11,9 +11,9 @@ public class SendMail {
     public void send(String toAddress, String msg) {
         String result = "not sent";
         String scopes[] = new String[] {
-            "https://mail.google.com/"
+                "https://mail.google.com/"
         };
-        //out.println("Preparing to Send Email...");
+        // out.println("Preparing to Send Email...");
         String recipient = toAddress;
         String sub = "Digital Vault e-mail verification";
 
@@ -26,24 +26,23 @@ public class SendMail {
         properties.put("mail.smtp.ssl.enable", "true");
         properties.put("mail.smtp.auth", "true");
 
-        Session session_var = Session.getInstance(properties);
-        Message message = new MimeMessage(session_var);
+        Session session = Session.getInstance(properties);
+        Message message = new MimeMessage(session);
 
         try {
             message.setFrom(new InternetAddress(userName));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
             message.setSubject(sub);
 
-            //new
+            // new
             MimeMultipart multipart = new MimeMultipart();
 
-            //MESSAGE PART
+            // MESSAGE PART
             MimeBodyPart messageBodyPart = new MimeBodyPart();
 
             messageBodyPart.setText(msg);
 
             multipart.addBodyPart(messageBodyPart);
-
 
             message.setContent(multipart);
 
@@ -58,7 +57,6 @@ public class SendMail {
             e.printStackTrace();
             result = "Error: unable to send message....";
         }
-
 
     }
 
