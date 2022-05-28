@@ -8,7 +8,6 @@ public class SAMLInputContainer {
     private String strNameID;
     private String strNameQualifier;
     private String sessionId;
-    // private String
     private int maxSessionTimeoutInMinutes = 15;
 
     private Map<String, String> attributes;
